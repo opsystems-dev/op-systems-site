@@ -1,12 +1,14 @@
 import { Hero } from "@/components/sections/hero"
 import { Services } from "@/components/sections/services"
+import { LeadCapture } from "@/components/sections/lead-capture"
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       <Hero />
       <Services />
-      
+      <LeadCapture />
+
       {/* Placeholder for next sections */}
       <section className="section-padding bg-gray-50">
         <div className="container mx-auto text-center">
