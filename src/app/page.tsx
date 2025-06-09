@@ -2,6 +2,7 @@ import { Hero } from "@/components/sections/hero"
 import { Services } from "@/components/sections/services"
 import { LeadCapture } from "@/components/sections/lead-capture"
 import { FounderBrief } from "@/components/sections/founder-brief"
+import { QutoBanner } from "@/components/sections/quto-banner"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Services />
       <LeadCapture />
       <FounderBrief />
+      <QutoBanner />
 
       {/* Placeholder for next sections */}
       <section className="section-padding bg-gray-50">
