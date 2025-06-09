@@ -5,8 +5,14 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'OP Systems',
-  description: 'OP Systems - Coming Soon',
+  title: "OP Systems - Construction Operations Consulting",
+  description: "Transform operational chaos into intelligent systems. More boots on the ground, less admin in chairs. ISO compliance, digital transformation, and process automation for growing construction businesses.",
+  keywords: "construction consulting, operational efficiency, ISO compliance, digital transformation, process automation, construction systems",
+  icons: {
+    icon: '/ops-logo-colour.svg',
+    shortcut: '/ops-logo-colour.svg',
+    apple: '/ops-logo-colour.svg',
+  },
 }
 
 export default function RootLayout({
@@ -16,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   )
 } 
