@@ -97,7 +97,7 @@ export function LeadCapture() {
             </div>
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Request Received!</h3>
             <p className="text-lg text-gray-600 mb-6">
-              I'll get your template ready and send it over within 24 hours. 
+              I&apos;ll get your template ready and send it over within 24 hours. 
               Keep an eye on your inbox!
             </p>
           </div>
@@ -114,7 +114,7 @@ export function LeadCapture() {
             Get a Free Template to Use Immediately
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            I'll create a custom template or document for your specific needs and send it over within 24 hours. 
+            I&apos;ll create a custom template or document for your specific needs and send it over within 24 hours. 
             No charge, no strings attached - just immediate value for your business.
           </p>
         </div>
@@ -205,7 +205,7 @@ export function LeadCapture() {
                 </form>
                 
                 <p className="text-sm text-gray-500 mt-4 text-center">
-                    I'll personally create and send your template within 24 hours
+                    I&apos;ll personally create and send your template within 24 hours
                 </p>
             </div>
           </div>

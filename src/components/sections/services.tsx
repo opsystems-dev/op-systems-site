@@ -75,7 +75,7 @@ export function Services() {
         {/* Bottom CTA */}
         <div className="text-center mt-16 fade-in">
           <p className="text-lg text-gray-600 mb-6">
-            Every business is different. Let's talk about what you actually need.
+            Every business is different. Let&apos;s talk about what you actually need.
           </p>
           <button className="btn-primary">
             Discuss Your Project
