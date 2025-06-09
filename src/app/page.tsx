@@ -3,6 +3,8 @@ import { Services } from "@/components/sections/services"
 import { LeadCapture } from "@/components/sections/lead-capture"
 import { FounderBrief } from "@/components/sections/founder-brief"
 import { QutoBanner } from "@/components/sections/quto-banner"
+import { Footer } from "@/components/sections/footer"
+import { Contact } from "@/components/sections/contact"
 
 export default function Home() {
   return (
@@ -12,13 +14,8 @@ export default function Home() {
       <LeadCapture />
       <FounderBrief />
       <QutoBanner />
-
-      {/* Placeholder for next sections */}
-      <section className="section-padding bg-gray-50">
-        <div className="container mx-auto text-center">
-          <h3 className="text-2xl font-semibold text-gray-800">Lead capture section coming next...</h3>
-        </div>
-      </section>
+      <Contact />
+      <Footer />
     </main>
   )
 }

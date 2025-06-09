@@ -1,5 +1,7 @@
 "use client"
 
+import Image from "next/image"
+
 export function Hero() {
   const scrollToForm = () => {
     document.getElementById('lead-capture-form')?.scrollIntoView({ 
@@ -7,13 +9,24 @@ export function Hero() {
     })
   }
 
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ 
+      behavior: 'smooth' 
+    })
+  }
+
   return (
-    <section className="section-padding bg-gradient-to-br from-gray-50 to-white">
+    <section className="section-padding bg-gradient-to-b from-white to-slate-100">
       <div className="container mx-auto max-w-6xl text-center">
         {/* Company Logo/Name */}
         <div className="mb-8 fade-in">
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">OP Systems</h1>
-          <div className="w-24 h-1 gradient-accent mx-auto rounded-full"></div>
+            <Image 
+                src="/OPS-Wordmark-Colour-Black-svg.svg" 
+                alt="OP Systems" 
+                width={300}
+                height={80}
+                className="mx-auto h-8 w-auto"
+            />
         </div>
 
         {/* Main Headline */}
@@ -41,8 +54,8 @@ export function Hero() {
           <button onClick={scrollToForm} className="btn-accent">
             Request Free Template
           </button>
-          <button className="btn-primary">
-            Book Systems Audit
+          <button onClick={scrollToContact} className="btn-primary">
+            Get In Touch
           </button>
         </div>
 

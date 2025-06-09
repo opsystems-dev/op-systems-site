@@ -1,4 +1,6 @@
 import { CheckCircle } from "lucide-react"
+import Image from "next/image"
+
 
 export function FounderBrief() {
   const highlights = [
@@ -56,11 +58,13 @@ export function FounderBrief() {
                 </blockquote>
                 
                 <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full overflow-hidden">
-                    <img 
+                <div className="w-12 h-12 rounded-full overflow-hidden">    
+                    <Image 
                         src="/profile-image-2025.png" 
                         alt="Haiden Baker" 
                         className="w-full h-full object-cover"
+                        width={48}
+                        height={48}
                     />
                 </div>
                 <div>

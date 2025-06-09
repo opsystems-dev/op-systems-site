@@ -1,3 +1,5 @@
+"use client"
+
 import { Shield, Zap, TrendingUp } from "lucide-react"
 
 export function Services() {
@@ -12,7 +14,7 @@ export function Services() {
       icon: Zap,
       title: "Digital Transformation", 
       description: "Take your business from paper-based chaos to streamlined digital workflows. Custom solutions that fit your current size and grow with you.",
-      examples: ["Digital prestart checklists", "Automated reporting systems", "Server organisation & structure", "Integration solutions"]
+      examples: ["Automated reporting systems", "Custom built web apps", "Server organisation & structure", "Integration solutions"]
     },
     {
       icon: TrendingUp,
@@ -21,6 +23,12 @@ export function Services() {
       examples: ["Daily cost tracking systems", "Tendering templates", "Project management setup", "Process automation"]
     }
   ]
+
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ 
+      behavior: 'smooth' 
+    })
+  }
 
   return (
     <section className="section-padding bg-white">
@@ -77,8 +85,8 @@ export function Services() {
           <p className="text-lg text-gray-600 mb-6">
             Every business is different. Let&apos;s talk about what you actually need.
           </p>
-          <button className="btn-primary">
-            Discuss Your Project
+          <button onClick={scrollToContact} className="btn-primary">
+            Let&apos;s Discuss Your Project
           </button>
         </div>
       </div>
